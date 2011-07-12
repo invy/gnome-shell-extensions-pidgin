@@ -45,7 +45,7 @@ function _fixText(text) {
 }
 
 PidginNotification.prototype = {
-    __proto__: TelepathyClient.Notification.prototype,
+    __proto__: TelepathyClient.ChatNotification.prototype,
 
     appendMessage: function(message, noTimestamp, styles) {
         let messageBody = _fixText(message.text);
