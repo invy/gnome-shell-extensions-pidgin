@@ -363,8 +363,17 @@ PidginClient.prototype = {
     }
 }
 
+let _client;
 
-function main(metadata) {
-    imports.gettext.bindtextdomain('gnome-shell-extensions', metadata.localedir);
-    let client = new PidginClient();
+function enable() {
+    _client = new PidginClient();
 }
+
+function disable() {
+    _client.destroy();
+}
+
+function init(metadata) {
+    imports.gettext.bindtextdomain('gnome-shell-extensions', metadata.localedir);
+}
+

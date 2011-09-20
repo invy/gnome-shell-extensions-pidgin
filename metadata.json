@@ -2,7 +2,7 @@
  "uuid": "pidgin@gnome-shell-extensions.gnome.org",
  "name": "Pidgin IM Integration",
  "description": "Display Pidgin chats as notifications in the Shell message tray.",
- "shell-version": [ "3.1.3" ],
+ "shell-version": [ "3.1.90" ],
  "localedir": "/usr/share/locale",
  "url": "https://github.com/kagesenshi/gnome-shell-extensions-pidgin"
 }
